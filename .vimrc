@@ -8,6 +8,26 @@ set number
 set showcmd
 set incsearch
 set hlsearch
+set ignorecase      " case insensitive search
+set smartcase       " case sensitive if pattern contains upper-case
+set nobackup        " disable backup files
+set noswapfile      " disable .swp files
+set timeoutlen=1000 ttimeoutlen=0 " avoid delay in ESC key
+
+" --- Global editing settings ---
+set autoindent       " automatically indent line
+set expandtab        " by default expand tabs
+set smarttab         " insert tabs on the start of a line according to shidtwidth, not tabstop
+set tabstop=4        " set tab to 4 spaces
+set shiftwidth=4     " number of space to use for auto-indenting
+set backspace=eol,start,indent " allow backspacing over everything in insert mode
+set nojoinspaces     " when joining lines, don't put 2 spaces after a full stop.
+
+" --- Keybindings ---
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
 
 " --- Set the runtime path to include Vundle and initialize ---
 set rtp+=~/.vim/bundle/Vundle.vim
