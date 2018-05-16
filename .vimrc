@@ -22,6 +22,8 @@ set tabstop=4        " set tab to 4 spaces
 set shiftwidth=4     " number of space to use for auto-indenting
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
 set nojoinspaces     " when joining lines, don't put 2 spaces after a full stop.
+set scrolloff=5     " minimum number of lines to keep above below cursor
+set sidescrolloff=5 " minimum number of columns to keep the the side of the cursor
 
 " --- Keybindings ---
 map <C-t><up> :tabr<cr>
