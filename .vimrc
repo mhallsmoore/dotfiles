@@ -40,6 +40,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'ErichDonGubler/vim-sublime-monokai'
 Plugin 'w0rp/ale'
 
 call vundle#end()            " required
@@ -51,5 +52,7 @@ map <C-n> :NERDTreeToggle<CR>
 " --- Colourscheme ---
 syntax on
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
+colorscheme sublimemonokai
+set termguicolors
